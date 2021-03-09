@@ -30,7 +30,7 @@ rl.question("What's your name? Nicknames are also acceptable :) ", (answer) => {
             rl.question('What is your superpower? In a few words, tell us what you are amazing at! ', (answer) => {
               profile.superPower = answer;
               
-              console.log(`Profile successfully created !!\n${inspect(profile)}`);
+              console.log(`\n${profile.name} loves listening to ${profile.music} while ${profile.hobby}, devouring ${profile.dish} for ${profile.meal}, prefers ${profile.sport} over any other sport, and is amazing at ${profile.superPower}.`);
              
               rl.close();
             });
